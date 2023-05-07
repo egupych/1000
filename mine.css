@@ -159,6 +159,7 @@ color: red;
   object-fit: none;
   display: flex; 
   transform: translate(0vw, 0vw);
+  filter: grayscale(100%);
   opacity: 0.8;
   transition: all 3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -168,6 +169,7 @@ color: red;
   width: 100%;
   height: 100%;
   transform: translate(0vw, 0vw);
+  filter: grayscale(0%);
   opacity: 1;
 }
 .head {
