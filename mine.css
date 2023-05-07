@@ -65,6 +65,13 @@ body {
 	font-size: 1.4vw;
   /*user-select: none;  Не даёт взаимодействовать с текстом */
 }
+
+
+  /*Меняет цвет выделения*/
+::selection {
+  background-color: #F5A925;
+  color: #F7F7F7;
+}
   
 input,
 button,
@@ -140,7 +147,7 @@ color: red;
 }
 
 .container_header_grid {
-  width: 94%;
+  width: 90%;
   margin: 2.5vw auto;
 }
 
@@ -317,7 +324,7 @@ align-items: center;
 
 .line {
   border: 0.02vw solid #F5A925;
-  width: 94%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 2vw;
 }
@@ -364,7 +371,7 @@ align-items: center;
 }
 
 .frame_104 img{
-  width: 94%;
+  width: 90%;
   margin: 2vw;
 }
 
@@ -437,21 +444,21 @@ align-items: center;
 }
 
 .authors {
-  line-height: 140%;
+  line-height: 160%;
   position: relative;
 }
 
 .advertising {
   position: absolute;
-  width: 16vw;
-  top: -67%;
-  left: -10%;
+  width: 17vw;
+  top: -57%;
+  left: -9%;
   opacity: 0;
   pointer-events: none;
 }
 
 .authors span {
-  line-height: 140%;
+  line-height: 160%;
 }
 
 
@@ -461,10 +468,9 @@ align-items: center;
   width: 90%;
   align-items: center;
   font-size: 1vw;
-  margin-bottom: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
   font-weight: 500;
-  letter-spacing: -0.01vw;
-
 }
 
 .authors:hover .advertising {
