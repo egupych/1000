@@ -315,6 +315,11 @@ align-items: center;
   margin-bottom: 2vw;
 }
 
+.paragraph_descriotion::first-letter {
+  color: #F5A925;
+  font-size: 1.7vw;
+}
+
 .paragraph_header {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 300;
