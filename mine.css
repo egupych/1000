@@ -148,7 +148,7 @@ color: red;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  grid-gap: 1.2vw;
+  grid-gap: 2vw;
 }
  
 .gallery__img {
@@ -226,19 +226,19 @@ color: red;
 }
 
 .gallery__item--1 img {
-  border-radius: 2vw 2vw 0 0;
+  border-radius: 3vw 3vw 0 0;
 }
 .gallery__item--2 img {
-  border-radius: 2vw 0 0 0;
+  border-radius: 3vw 0 0 0;
 }
 .gallery__item--3 img {
-  border-radius: 0 0 2vw 0;
+  border-radius: 0 0 3vw 0;
 }
 .gallery__item--4 img {
-  border-radius: 0 0 0 2vw;
+  border-radius: 0 0 0 3vw;
 }
 .gallery__item--5 img {
-  border-radius: 0 0 2vw 0;
+  border-radius: 0 0 3vw 0;
 }
 
 .text_card {
