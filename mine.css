@@ -1,0 +1,384 @@
+/* @font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), url('Nunito-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Обнуление                                        */
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  :focus,
+  :active {
+	outline: none;
+  }
+  a:focus,
+  a:active {
+	outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+	display: block;
+  }
+  
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x:hidden;
+}
+
+body {
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x:hidden;
+  background: #F7F7F7;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 1.4vw;
+  /*user-select: none;  Не даёт взаимодействовать с текстом */
+}
+  
+input,
+button,
+textarea {
+font-family: inherit;
+}
+
+input::-ms-clear {
+display: none;
+}
+button {
+cursor: pointer;
+background: none;
+}
+button::-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+a,
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+ul li {
+list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-size: inherit;
+font-weight: 400;
+}
+
+.bigred {
+font-size: 20px;
+color: red;
+}
+
+  
+* {
+  color: #212123;
+}
+
+.container {
+  width: 94%;
+  margin: 2.5vw auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1.2vw;
+}
+ 
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.head {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-size: 4.7vw;
+  line-height: 100%;
+  color: #212123;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__item--1 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery__item--2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+ 
+.gallery__item--3 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+ 
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+ 
+.gallery__item--5 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.gallery__item--1 img {
+  border-radius: 2vw 2vw 0 0;
+}
+.gallery__item--2 img {
+  border-radius: 2vw 0 0 0;
+}
+.gallery__item--3 img {
+  border-radius: 0 0 2vw 0;
+}
+.gallery__item--4 img {
+  border-radius: 0 0 0 2vw;
+}
+.gallery__item--5 img {
+  border-radius: 0 0 2vw 0;
+}
+
+.line {
+  border: 0.02vw solid #F5A925;
+  width: 94%;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vw;
+
+  color: #212123;
+  cursor: pointer;
+}
+
+.vk_logo {
+  width: 2.2vw;
+}
+
+.ok_logo {
+  width: 2.2vw;
+}
+
+.logos_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo_social {
+  cursor: pointer;
+}
+
+.logo_footer_vk {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo_footer_vk:hover .vk_stroke {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.logo_footer_ok {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo_footer_ok:hover .ok_stroke {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+
+.vk_stroke {
+  position: absolute;
+  width: 3.4vw;
+  top: -35%;
+  left: -7%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ok_stroke {
+  position: absolute;
+  width: 3vw;
+  top: -10%;
+  left: -7%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.authors {
+  line-height: 140%;
+  position: relative;
+}
+
+.advertising {
+  position: absolute;
+  width: 16vw;
+  top: -67%;
+  left: -10%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.authors span {
+  line-height: 140%;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  font-size: 1vw;
+  margin-bottom: 2vw;
+  font-weight: 500;
+  letter-spacing: -0.01vw;
+
+}
+
+.authors:hover .advertising {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Скроллбар                                        */
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+::-webkit-scrollbar {
+  width: 0.5vw; /* Ширина скроллбара */
+  background-color: transparent; 
+  transition: all 0.3s ease;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #F5A925; /* Цвет полосы прокрутки при наведении */
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #F5A925; /* Цвет полосы прокрутки при наведении */
+}
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Анимация загрузки                                */
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7;
+  z-index: 9999;
+}
+
+#loader {
+  border: 0.3vw solid #F7F7F7;
+  border-top: 0.3vw solid #F5A925;
+  border-radius: 100%;
+  width: 3vw;
+  height: 3vw;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* Адаптив                                          */
+/*::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media screen  and (max-width: 576px) {
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+}
