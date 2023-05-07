@@ -80,3 +80,70 @@ if (animIMGs.length > 0) {
   }, 300);
 }
 
+// Получаем элемент, который будем анимировать
+const numberElement1 = document.getElementById("number1");
+
+// Устанавливаем начальное значение
+let number1 = 889976;
+
+// Функция для анимации числа
+function animateNumber1() {
+  // Если число достигло нужного значения, останавливаем анимацию
+  if (number1 >= 890000) {
+    clearInterval(interval1);
+  } else {
+    // Увеличиваем значение числа на 1 и обновляем текст элемента
+    number1++;
+    numberElement1.textContent = number1;
+  }
+}
+
+// Запускаем анимацию с интервалом в 50 миллисекунд
+const interval1 = setInterval(animateNumber1, 100);
+
+
+
+// Получаем элемент, который будем анимировать
+const numberElement2 = document.getElementById("number2");
+
+// Устанавливаем начальное значение
+let number2 = 0;
+
+// Функция для анимации числа
+function animateNumber2() {
+  // Если число достигло нужного значения, останавливаем анимацию
+  if (number2 >= 24) {
+    clearInterval(interval2);
+  } else {
+    // Увеличиваем значение числа на 1 и обновляем текст элемента
+    number2++;
+    numberElement2.textContent = number2;
+  }
+}
+
+// Запускаем анимацию с интервалом в 50 миллисекунд
+const interval2 = setInterval(animateNumber2, 100);
+
+
+
+
+// Получаем элемент, который будем анимировать
+const numberElement3 = document.getElementById("number3");
+
+// Устанавливаем начальное значение
+let number3 = 1;
+
+// Функция для анимации числа
+function animateNumber3() {
+  // Если число достигло нужного значения, останавливаем анимацию
+  if (number3 >= 25) {
+    clearInterval(interval3);
+  } else {
+    // Увеличиваем значение числа на 1 и обновляем текст элемента
+    number3++;
+    numberElement3.textContent = number3;
+  }
+}
+
+// Запускаем анимацию с интервалом в 50 миллисекунд
+const interval3 = setInterval(animateNumber3, 100);

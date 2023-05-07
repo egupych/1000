@@ -66,7 +66,6 @@ body {
   /*user-select: none;  Не даёт взаимодействовать с текстом */
 }
 
-
   /*Меняет цвет выделения*/
 ::selection {
   background-color: #F5A925;
