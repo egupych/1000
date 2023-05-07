@@ -315,7 +315,7 @@ align-items: center;
   margin-bottom: 2vw;
 }
 
-.paragraph_descriotion::first-letter {
+.paragraph_description::first-letter {
   color: #F5A925;
   font-size: 1.7vw;
 }
@@ -325,20 +325,23 @@ align-items: center;
   font-weight: 300;
   font-size: 3.5vw;
   
-  align-items: center;
-  
   margin-bottom: 0.8vw;
 }
 
-.paragraph_descriotion {
+.paragraph_description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.3vw;
   line-height: 160%;
   margin-bottom: 1vw;
+  transform: translate(3vw, 0vw);
+  opacity: 0.2;
+  transition: all 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
-  align-items: center;
-
+.paragraph_description._active{
+  transform: translate(0vw, 0vw);
+  opacity: 1;
 }
 
 .frame_104 {
