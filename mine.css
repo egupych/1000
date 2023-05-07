@@ -114,6 +114,31 @@ color: red;
   color: #212123;
 }
 
+.back_button {
+  position: absolute;
+  top: 2.5vw;
+  left: 2.5vw;
+  transition: all 0.5s ease;
+}
+
+.back_button img {
+  width: 5vw;
+}
+
+.back_button:hover {
+  transform: scale(1.1);
+}
+
+.meme {
+  position: absolute;
+  top: 34.5vw;
+  left: 39vw;
+}
+
+.meme img {
+  width: 20vw;
+}
+
 .container {
   width: 94%;
   margin: 2.5vw auto;
@@ -148,6 +173,21 @@ color: red;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.design {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+.design img {
+  width: 10vw;
 }
 
 .gallery__item--1 {
@@ -199,6 +239,43 @@ color: red;
 }
 .gallery__item--5 img {
   border-radius: 0 0 2vw 0;
+}
+
+.text_card {
+  position: relative;
+
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.name_company {
+  position: absolute;
+  left: 3vw;
+  top: 16vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 100%;
+  color: #212123;
+}
+
+.name_desc {
+  position: absolute;
+  left: 3vw;
+  top: 19vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.8vw;
+  color: #212123;
+}
+
+.company_decor {
+  position: absolute;
+  left: 1.5vw;
+  top: 14.8vw;
+  width: 24vw;
 }
 
 .line {
