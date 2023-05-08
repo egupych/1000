@@ -127,23 +127,17 @@ const interval2 = setInterval(animateNumber2, 100);
 
 
 
-// Получаем элемент, который будем анимировать
-const numberElement3 = document.getElementById("number3");
+// const numberElement3 = document.getElementById("number3");
 
-// Устанавливаем начальное значение
-let number3 = 1;
+// let number3 = 1;
 
-// Функция для анимации числа
-function animateNumber3() {
-  // Если число достигло нужного значения, останавливаем анимацию
-  if (number3 >= 25) {
-    clearInterval(interval3);
-  } else {
-    // Увеличиваем значение числа на 1 и обновляем текст элемента
-    number3++;
-    numberElement3.textContent = number3;
-  }
-}
+// function animateNumber3() {
+//   if (number3 >= 25) {
+//     clearInterval(interval3);
+//   } else {
+//     number3++;
+//     numberElement3.textContent = number3;
+//   }
+// }
 
-// Запускаем анимацию с интервалом в 50 миллисекунд
-const interval3 = setInterval(animateNumber3, 100);
+// const interval3 = setInterval(animateNumber3, 100);
