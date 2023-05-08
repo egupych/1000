@@ -244,19 +244,19 @@ color: red;
 }
 
 .gallery__item--1 img {
-  border-radius: 3vw 3vw 0 0;
+  border-radius: 4vw 4vw 0 0;
 }
 .gallery__item--2 img {
-  border-radius: 3vw 0 0 0;
+  border-radius: 4vw 0 0 0;
 }
 .gallery__item--3 img {
-  border-radius: 0 0 3vw 0;
+  border-radius: 0 0 4vw 0;
 }
 .gallery__item--4 img {
-  border-radius: 0 0 0 3vw;
+  border-radius: 0 0 0 4vw;
 }
 .gallery__item--5 img {
-  border-radius: 0 0 3vw 0;
+  border-radius: 0 0 4vw 0;
 }
 
 .text_card {
