@@ -141,3 +141,20 @@ const interval2 = setInterval(animateNumber2, 100);
 // }
 
 // const interval3 = setInterval(animateNumber3, 100);
+
+const text = "с намёком на 80-е";
+const delay = 100; // задержка между появлением каждой буквы
+
+const target = document.getElementById('typing-effect');
+
+function typeEffect(text, i) {
+  if (i < text.length) {
+    target.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(function() {
+      typeEffect(text, i);
+    }, delay);
+  }
+}
+
+typeEffect(text, 0);
