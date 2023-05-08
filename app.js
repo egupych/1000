@@ -158,3 +158,4 @@ function typeEffect(text, i) {
 }
 
 typeEffect(text, 0);
+
