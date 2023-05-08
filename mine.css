@@ -551,6 +551,14 @@ footer {
   display: none;
 }
 
+.head {
+  font-size: 5vw;
+}
+
+.meme {
+  top: 32vw;
+}
+
 .container_header_grid {
   width: 90%;
   margin: 5vw auto;
