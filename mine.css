@@ -659,24 +659,34 @@ align-items: center;
   gap: 3vw;
 }
 
+.logos_mobile {
+  display: flex;
+}
+
 .logo {
   font-weight: 500;
   font-size: 6vw;
 }
 
-.logos_footer {
 
-  font-size: 4vw;
-  gap: 6vw;
+.logo_social {
+  display: none;
+}
+
+.logos_footer {
+  font-size: 1vw;
+  gap: 1vw;
   flex-direction: row;
+  margin-left: 4vw;
+  margin-left: 0 auto;
 }
 
 .vk_logo {
-  width: 6.2vw;
+  width: 7vw;
 }
 
 .ok_logo {
-  width: 6.2vw;
+  width: 7vw;
 }
 
 .vk_stroke {
