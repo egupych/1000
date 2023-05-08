@@ -551,12 +551,35 @@ footer {
   display: none;
 }
 
+.back_button {
+  position: absolute;
+  top: 4.5vw;
+  left: 4.5vw;
+}
+
+.back_button img {
+  width: 8vw;
+}
+
+.design {
+  grid-column-start: 2;
+}
+
+.design img {
+  width: 12vw;
+}
+
 .head {
   font-size: 5vw;
 }
 
 .meme {
   top: 32vw;
+  left: 36vw;
+}
+
+.meme img {
+  width: 23vw;
 }
 
 .container_header_grid {
