@@ -135,6 +135,20 @@ color: red;
   transform: scale(1.1);
 }
 
+.rocket {
+  position: fixed;
+  bottom: 1vw;
+  right: 0.9vw;
+  width: 3vw;
+  cursor: pointer;
+  transition: all 0.2s ease;
+} 
+
+.rocket:hover {
+transform: scale(1.05);
+
+}
+
 .meme {
   position: absolute;
   top: 30vw;
