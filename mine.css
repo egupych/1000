@@ -571,6 +571,10 @@ footer {
   display: none;
 }
 
+.rocket {
+  display: none;
+  } 
+
 .back_button {
   position: absolute;
   top: 4.5vw;
