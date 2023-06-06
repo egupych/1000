@@ -138,14 +138,15 @@ color: red;
 .rocket {
   position: fixed;
   bottom: 1vw;
-  right: 0.9vw;
-  width: 3vw;
+  right: 0.5vw;
+  width: 3.5vw;
   cursor: pointer;
   transition: all 0.2s ease;
+  display: none;
 } 
 
 .rocket:hover {
-transform: scale(1.05);
+transform: scale(1.1);
 
 }
 

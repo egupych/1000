@@ -174,3 +174,15 @@ function setScrollIntoView1Options(top) {
 		behavior: "smooth"
 	});
 }
+
+
+window.addEventListener('scroll', function() {
+  var rocket = document.getElementById('rocket');
+  var scrollPositionRocket = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPositionRocket >= window.innerHeight) {
+    rocket.style.display = 'block';
+  } else {
+    rocket.style.display = 'none';
+  }
+});
