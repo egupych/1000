@@ -189,3 +189,39 @@ window.addEventListener('scroll', function() {
 
 
 
+ // JavaScript код для отображения попапа при достижении конца страницы
+ window.addEventListener('scroll', function() {
+  var popup = document.getElementById('popup');
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  var documentHeight = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.body.clientHeight,
+    document.documentElement.clientHeight
+  );
+
+  if (scrollTop + windowHeight >= documentHeight) {
+    // Показываем попап
+    popup.style.top = '0';
+  } else {
+    // Скрываем попап
+    popup.style.top = '-100%';
+  }
+});
+
+// JavaScript код для закрытия попапа при клике вне области попапа
+document.addEventListener('click', function(event) {
+  var popup = document.getElementById('popup');
+  var isClickInsidePopup = popup.contains(event.target);
+  
+  if (!isClickInsidePopup) {
+    popup.style.top = '-100%';
+  }
+});
+
+document.getElementById("popup").addEventListener("click", function() {
+window.location.href = "https://egupych.github.io/1001/";
+});
