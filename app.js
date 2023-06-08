@@ -203,7 +203,7 @@ window.addEventListener('scroll', function() {
     document.documentElement.clientHeight
   );
 
-  if (scrollTop + windowHeight >= documentHeight) {
+  if (scrollTop + windowHeight+150 >= documentHeight) {
     // Показываем попап
     popup.style.top = '0';
   } else {

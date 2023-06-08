@@ -128,7 +128,10 @@ color: red;
   transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 9999;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
+
 
 .curly_back {
   width: 100vw;
@@ -581,6 +584,11 @@ footer {
 
 
 @media screen  and (max-width: 576px) {
+  
+  .curly_back {
+    width: 250vw;
+  }
+
 
 ::-webkit-scrollbar {
   display: none;
