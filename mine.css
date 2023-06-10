@@ -69,7 +69,7 @@ body {
   /*Меняет цвет выделения*/
 ::selection {
   background-color: #F5A925;
-  color: #000000;
+  color: #212123;
 }
   
 input,
@@ -118,6 +118,12 @@ color: red;
   
 * {
   color: #212123;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 
 #popup {
@@ -595,6 +601,94 @@ footer {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+
+
+
+.form-container {
+  width: 90vw;
+  border-radius: 2vw;
+  background-color: #212123;
+  padding: 4vw;
+  margin-bottom: 2.5vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #F7F7F7;
+}
+
+.form {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+.sign {
+  display: block;
+  width: 20%;
+  background-color: #f5a925;
+  padding: 1vw;
+  text-align: center;
+  color: #212123;
+  border: none;
+  border-radius: 1vw;
+  font-weight: 600;
+  margin: 0.5vw;
+  font-size: 1vw;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 0.02vw;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message .message {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1vw;
+  line-height: 0vw;
+  color: #F7F7F7;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon svg {
+  height: 1.6vw;
+  fill: #f7f7f7;
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #F7F7F7;
+}
+
 
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
