@@ -125,7 +125,7 @@ color: red;
   top: -100%; /* Скрываем попап за пределами экрана */
   left: 0;
   width: 100%;
-  transition: all 2.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   z-index: 9999;
   cursor: pointer;
   display: flex;
