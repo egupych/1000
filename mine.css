@@ -393,10 +393,10 @@ align-items: center;
   margin-bottom: 2vw;
 }
 
-.paragraph_description::first-letter {
+/* .paragraph_description::first-letter {
   color: #F5A925;
   font-size: 1.7vw;
-}
+} */
 
 .paragraph_header {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -617,13 +617,14 @@ footer {
 
 .title {
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.7vw;
   font-weight: 700;
   color: #F7F7F7;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .quote {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: #F7F7F7;
   padding: 2vw 15vw 0vw;
   text-align: center;
@@ -638,21 +639,21 @@ footer {
 
 .sign {
   display: block;
-  width: 20%;
+  width: 30%;
   background-color: #f5a925;
-  padding: 1vw;
+  padding: 1.5vw;
   text-align: center;
   color: #212123;
   border: none;
   border-radius: 1vw;
   font-weight: 600;
   margin: 2vw;
-  font-size: 1vw;
+  font-size: 1.2vw;
   transition: all .5s ease;
 }
 
 .sign:hover {
-  width: 24%;
+  width: 35%;
 }
 
 .social-message {
@@ -669,7 +670,7 @@ footer {
 .social-message .message {
   padding-left: 2vw;
   padding-right: 2vw;
-  font-size: 1vw;
+  font-size: 1.2vw;
   line-height: 0vw;
   color: #F7F7F7;
 }
@@ -813,10 +814,10 @@ align-items: center;
   margin-bottom: 3vw;
 }
 
-.paragraph_description::first-letter {
+/* .paragraph_description::first-letter {
   color: #F5A925;
   font-size: 4vw;
-}
+} */
 
 .paragraph_header {
   font-family: 'Montserrat Alternates', sans-serif;
