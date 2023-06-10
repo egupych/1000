@@ -629,10 +629,6 @@ footer {
   text-align: center;
 }
 
-.big_quotes {
-  font-size: 1vw;
-  color: #f5a925;
-}
 
 .form {
   display: flex;
@@ -890,13 +886,18 @@ align-items: center;
 }
 
 
+.form-container {
+  width: 90vw;
+  border-radius: 2vw;
+  background-color: #212123;
+  padding: 4vw 6vw;
+  margin-bottom: 4vw;
+}
+
+
 .quote {
   font-size: 3vw;
   padding: 2vw 0 3vw;
-}
-
-.big_quotes {
-  font-size: 3vw;
 }
 
 .sign {
@@ -949,7 +950,7 @@ align-items: center;
 }
 
 .social .icon svg {
-  height: 3.5vw;
+  height: 4vw;
   fill: #f7f7f7;
 }
 
