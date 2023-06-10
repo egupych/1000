@@ -613,7 +613,7 @@ footer {
 
 .form-container {
   width: 90vw;
-  border-radius: 2vw;
+  border-radius: 4vw;
   background-color: #212123;
   padding: 4vw 8vw;
   margin-bottom: 2.5vw;
@@ -649,7 +649,7 @@ footer {
   text-align: center;
   color: #212123;
   border: none;
-  border-radius: 1vw;
+  border-radius: 2vw;
   font-weight: 600;
   margin: 2vw;
   font-size: 1.2vw;
@@ -893,7 +893,7 @@ align-items: center;
 
 .form-container {
   width: 90vw;
-  border-radius: 2vw;
+  border-radius: 4vw;
   background-color: #212123;
   padding: 4vw 6vw;
   margin-bottom: 4vw;
@@ -913,7 +913,7 @@ align-items: center;
   text-align: center;
   color: #212123;
   border: none;
-  border-radius: 3vw;
+  border-radius: 4vw;
   font-weight: 600;
   margin-bottom: 4vw;
   font-size: 3vw;
