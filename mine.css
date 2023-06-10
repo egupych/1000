@@ -125,7 +125,7 @@ color: red;
   top: -100%; /* Скрываем попап за пределами экрана */
   left: 0;
   width: 100%;
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 2.5s ease-in-out;
   z-index: 9999;
   cursor: pointer;
   display: flex;
@@ -134,7 +134,27 @@ color: red;
 
 
 .curly_back {
-  width: 100vw;
+  width: 30vw;
+}
+
+.curly_back:hover{
+  width: 30vw;
+  animation: swing 1.3s ease-in-out;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: translateX(0.1vw);
+  }
+  66% {
+    transform: translateX(-0.1vw);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .back_button {
@@ -586,7 +606,7 @@ footer {
 @media screen  and (max-width: 576px) {
   
   .curly_back {
-    width: 250vw;
+    width: 80vw;
   }
 
 
