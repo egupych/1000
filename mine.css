@@ -889,4 +889,69 @@ align-items: center;
   display: none;
 }
 
+
+.quote {
+  font-size: 3vw;
+  padding: 2vw 0 3vw;
+}
+
+.big_quotes {
+  font-size: 3vw;
+}
+
+.sign {
+  display: block;
+  width: 80%;
+  background-color: #f5a925;
+  padding: 3vw;
+  text-align: center;
+  color: #212123;
+  border: none;
+  border-radius: 3vw;
+  font-weight: 600;
+  margin-bottom: 4vw;
+  font-size: 3vw;
+  transition: all .5s ease;
+}
+
+.sign:hover {
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #F7F7F7;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+.social-message .message {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  font-size: 3vw;
+  line-height: 3vw;
+  color: #F7F7F7;
+}
+
+.social-contacts a {
+  color: #f7f7f7;
+  font-size: 3.4vw;
+  line-height: 6vw;
+}
+
+.social .icon {
+  border: none;
+  background-color: transparent;
+  margin-left: 1vw;
+  padding: 4vw 2vw;
+}
+
+.social .icon svg {
+  height: 3.5vw;
+  fill: #f7f7f7;
+}
+
+
 }
