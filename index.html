@@ -56,19 +56,19 @@
         <div class="design"> <img src="Дизайн.svg" alt=""></div>
         <div class="head" id="typing-effect">Творческая <br> спальня-гостиная <br></div>
         <figure class="gallery__item gallery__item--1">
-            <img src="image 1.png" alt="Gallery image 1" class="gallery__img _anim-IMG _anim-no-IMG">
+            <img onclick="toggleImageSize(this)" src="image 1.png" alt="Gallery image 1" class="gallery__img image _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--2">
-            <img src="image 3.png" alt="Gallery image 2" class="gallery__img _anim-IMG _anim-no-IMG">
+            <img src="image 3.png" alt="Gallery image 2" class=" gallery__img  _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--3">
-            <img src="image 2.png" alt="Gallery image 3" class="gallery__img _anim-IMG _anim-no-IMG">
+            <img src="image 2.png" alt="Gallery image 3" class="gallery__img  _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--4">
-            <img src="image 4.png" alt="Gallery image 4" class="gallery__img _anim-IMG _anim-no-IMG">
+            <img onclick="toggleImageSize(this)" src="image 4.png" alt="Gallery image 4" class="gallery__img  image _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--5">
-            <img src="image 5.png" alt="Gallery image 5" class="gallery__img _anim-IMG _anim-no-IMG">
+            <img onclick="toggleImageSize(this)" src="image 5.png" alt="Gallery image 5" class="gallery__img image _anim-IMG _anim-no-IMG">
         </figure>
         <div class="text_card">
           <p class="name_company">Анна Зуева</p>
@@ -130,7 +130,39 @@
 </div>
 
 
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .grid-item {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  .expanded {
+    grid-column: 1 / span 3;
+  }
+  .expanded img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="image 1.png" onclick="toggleImageSize(this)">
+  </div>
+  <!-- Другие элементы сетки -->
+</div>
 
+<script>
+  function toggleImageSize(image) {
+    image.parentNode.classList.toggle("expanded");
+  }
+</script>
  
 <div class="center">
   <div class="form-container parallax-one">

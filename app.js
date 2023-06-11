@@ -225,3 +225,9 @@ document.addEventListener('click', function(event) {
 document.getElementById("popup").addEventListener("click", function() {
 window.location.href = "https://egupych.github.io/1001/";
 });
+
+
+
+function toggleImageSize(image) {
+    image.classList.toggle('expanded');
+}
