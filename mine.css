@@ -781,11 +781,6 @@ body {
   right: 0.5vw;
   width: 3.5vw;} 
 
-.meme {
-  top: 30vw;
-  left: 39vw;
-}
-
 .meme img {
   width: 20vw;
 }
@@ -1055,10 +1050,6 @@ padding: 2vw;
   font-size: 5vw;
 }
 
-.meme {
-  top: 32vw;
-  left: 36vw;
-}
 
 .meme img {
   width: 23vw;
