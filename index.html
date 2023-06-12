@@ -49,7 +49,6 @@
 <div class="back_button">
   <a href="https://egupych.github.io/1001/" title="Вернуться на главную">  <img src="back_button.svg" alt="" ></a>
 </div>
-<div class="meme"><img src="Но явно не советские.svg" alt=""></div>
 
 <div class="container_header_grid">
     <div class="gallery">
@@ -71,6 +70,7 @@
             <img onclick="toggleImageSize(this)" src="image 5.png" alt="Gallery image 5" class="gallery__img image _anim-IMG _anim-no-IMG">
         </figure>
         <div class="text_card">
+          <div class="meme"><img src="Но явно не советские.svg" alt=""></div>
           <p class="name_company">Анна Зуева</p>
           <p class="name_desc">Дизайнер</p>
           <img class="company_decor" src="company_decor.svg" alt="">
@@ -129,40 +129,6 @@
   <p class="paragraph_description _anim-items _anim-no">Интерьер дополнили акценты и декор: яркие лимоны и пушистые сухоцветы создают настроение, мольберт настраивает на творческий лад, а округлые вазочки и подсвечники рифмуются с рельефом на дверце платяного шкафа.   В свою очередь динамики пространству добавили декоративные подушки.</p>
 </div>
 
-
-<style>
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-  .grid-item {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-  }
-  .expanded {
-    grid-column: 1 / span 3;
-  }
-  .expanded img {
-    width: 100%;
-    height: auto;
-  }
-</style>
-</head>
-<body>
-<div class="grid-container">
-  <div class="grid-item">
-    <img src="image 1.png" onclick="toggleImageSize(this)">
-  </div>
-  <!-- Другие элементы сетки -->
-</div>
-
-<script>
-  function toggleImageSize(image) {
-    image.parentNode.classList.toggle("expanded");
-  }
-</script>
  
 <div class="center">
   <div class="form-container parallax-one">
