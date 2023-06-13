@@ -228,6 +228,3 @@ window.location.href = "https://egupych.github.io/1001/";
 
 
 
-function toggleImageSize(image) {
-    image.classList.toggle('expanded');
-}

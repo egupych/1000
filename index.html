@@ -55,19 +55,19 @@
         <div class="design"> <img src="Дизайн.svg" alt=""></div>
         <div class="head" id="typing-effect">Творческая <br> спальня-гостиная <br></div>
         <figure class="gallery__item gallery__item--1">
-            <img onclick="toggleImageSize(this)" src="image 1.png" alt="Gallery image 1" class="gallery__img image _anim-IMG _anim-no-IMG">
+            <img onclick="openModal(this);" src="image 1.png" alt="Gallery image 1" class="gallery__img image _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--2">
-            <img src="image 3.png" alt="Gallery image 2" class=" gallery__img  _anim-IMG _anim-no-IMG">
+            <img onclick="openModal(this);" src="image 3.png" alt="Gallery image 2" class=" gallery__img  _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--3">
-            <img src="image 2.png" alt="Gallery image 3" class="gallery__img  _anim-IMG _anim-no-IMG">
+            <img onclick="openModal(this);" src="image 2.png" alt="Gallery image 3" class="gallery__img  _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--4">
-            <img onclick="toggleImageSize(this)" src="image 4.png" alt="Gallery image 4" class="gallery__img  image _anim-IMG _anim-no-IMG">
+            <img onclick="openModal(this);" src="image 4.png" alt="Gallery image 4" class="gallery__img  image _anim-IMG _anim-no-IMG">
         </figure>
         <figure class="gallery__item gallery__item--5">
-            <img onclick="toggleImageSize(this)" src="image 5.png" alt="Gallery image 5" class="gallery__img image _anim-IMG _anim-no-IMG">
+            <img onclick="openModal(this);" src="image 5.png" alt="Gallery image 5" class="gallery__img image _anim-IMG _anim-no-IMG">
         </figure>
         <div class="text_card">
           <div class="meme"><img src="Но явно не советские.svg" alt=""></div>
@@ -170,6 +170,91 @@
     </div>
   </div>
 </div>
+
+
+<style>
+/* Стиль для модального окна */
+.modal {
+  display: none; /* Изначально скрыто */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Занимает всю ширину экрана */
+  height: 100%; /* Занимает всю высоту экрана */
+  overflow: auto;
+  background-color: rgb(255, 255, 255); /* Цвет фона */
+  background-color: rgba(255, 255, 255, 0.9); /* Цвет фона с прозрачностью */
+}
+
+/* Стиль для увеличенного изображения в модальном окне */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 90%; /* Ширина увеличенного изображения */
+}
+
+/* Стиль для кнопки закрытия модального окна */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Стиль для кнопки закрытия при наведении */
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Стиль для грид элемента */
+.grid-item {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+<!-- Грид контейнер с изображениями -->
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="image 1.png" alt="Изображение 1" onclick="openModal(this);">
+  </div>
+  <div class="grid-item">
+    <img src="image 2.png" alt="Изображение 2" onclick="openModal(this);">
+  </div>
+  <!-- Добавьте остальные изображения в грид контейнер -->
+</div>
+  
+<!-- Модальное окно -->
+<div id="myModal" class="modal" onclick="closeModal();">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+<script>
+  // Функция для открытия модального окна и установки увеличенного изображения
+  function openModal(img) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("imgModal");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+  }
+  
+  // Функция для закрытия модального окна
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+</script>
+  
+
 
 <div class="line"></div>
 <footer>
