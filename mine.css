@@ -316,6 +316,58 @@ transform: scale(1.1);
   border-radius: 0 0 69px 0;
 }
 
+
+.gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+ 
+.gallery__item--8 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+ 
+.gallery__item--9 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+ 
+.gallery__item--10 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.gallery__item--6 img {
+  border-radius: 69px 69px 0 0;
+}
+.gallery__item--7 img {
+  border-radius: 69px 0 0 0;
+}
+.gallery__item--8 img {
+  border-radius: 0 0 69px 0;
+}
+.gallery__item--9 img {
+  border-radius: 0 0 0 69px;
+}
+.gallery__item--10 img {
+  border-radius: 0 0 69px 0;
+}
+
 .text_card {
   position: relative;
 
