@@ -231,6 +231,7 @@ transform: scale(1.1);
   transform: translate(0, 0);
   opacity: 0.8;
   transition: all 3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
 }
 
 .gallery__img._active-IMG{

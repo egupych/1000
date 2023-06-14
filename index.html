@@ -201,7 +201,7 @@
 .modal {
   display: none; /* Изначально скрыто */
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   left: 0;
   top: 0;
   width: 100%; /* Занимает всю ширину экрана */
@@ -216,25 +216,6 @@
   margin: auto;
   display: block;
   height: 90%; /* Ширина увеличенного изображения */
-}
-
-/* Стиль для кнопки закрытия модального окна */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-/* Стиль для кнопки закрытия при наведении */
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 
