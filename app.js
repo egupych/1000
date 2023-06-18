@@ -99,7 +99,7 @@ function animateNumber1() {
 }
 
 // Запускаем анимацию с интервалом в 50 миллисекунд
-const interval1 = setInterval(animateNumber1, 100);
+const interval1 = setInterval(animateNumber1, 300);
 
 
 
@@ -122,7 +122,7 @@ function animateNumber2() {
 }
 
 // Запускаем анимацию с интервалом в 50 миллисекунд
-const interval2 = setInterval(animateNumber2, 100);
+const interval2 = setInterval(animateNumber2, 300);
 
 
 
