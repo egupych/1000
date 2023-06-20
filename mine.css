@@ -129,7 +129,7 @@ font-weight: 400;
 #popup {
   position: fixed;
   top: -100%; /* Скрываем попап за пределами экрана */
-  left: 0;
+  left: 600px;
   width: 100%;
   transition: all 2.2s cubic-bezier(1,1.1,.93,1);
   z-index: 9999;
@@ -140,7 +140,7 @@ font-weight: 400;
 
 
 .curly_back {
-  width: 602px;
+  width: 475px;
 }
 
 .curly_back:hover{
@@ -729,7 +729,7 @@ body {
 #popup {
   position: fixed;
   top: -100%; /* Скрываем попап за пределами экрана */
-  left: 0;
+  left: 35vw;
   width: 100%;
   transition: all 2.2s cubic-bezier(1,1.1,.93,1);
   z-index: 9999;
@@ -740,7 +740,7 @@ body {
 
 
 .curly_back {
-  width: 35vw;
+  width: 28vw;
 }
 
 @keyframes swing {
@@ -1027,10 +1027,14 @@ padding: 2vw;
 
 @media screen  and (max-width: 576px) {
   
-  .curly_back {
-    width: 80vw;
-  }
+.curly_back {
+  width: 80vw;
+}
 
+#popup {
+  left: 35vw;
+}
+  
 
 ::-webkit-scrollbar {
   display: none;
